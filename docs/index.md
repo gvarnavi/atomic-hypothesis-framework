@@ -9,8 +9,7 @@ toc: false
   flex-direction: column;
   align-items: center;
   font-family: var(--sans-serif);
-  margin: 4rem 0 8rem;
-  text-wrap: balance;
+  font-size: 18px;
   text-align: center;
 }
 
@@ -29,7 +28,7 @@ toc: false
 .hero h2 {
   margin: 0;
   max-width: 34em;
-  font-size: 20px;
+  font-size: 3vw;
   font-style: initial;
   font-weight: 500;
   line-height: 1.5;
@@ -47,6 +46,12 @@ toc: false
 <div class="hero">
   <h1>Classical Consequences of the Atomic Hypothesis</h1>
   <h2>Dr. Georgios Varnavides | UCB, LBNL</h2>
-  <h3>Follow along:bit.ly/atomic-hypothesis</h3>
+
+> If all of scientific knowledge were to be destroyed, and only one sentence passed on to the next generations, what statement would contain the most information in the fewest words?
+> I believe it is the atomic hypothesis, that **all things are made of atoms** - little particles that move around, attracting each other when they are a little distance apart, but repelling upon being squeezed into one another. 
+> In that one sentence, you will see, there is an enormous amount of information about the world, if just a little **imagination and thinking** are applied.
+
+Richard Feynman, The Feynman Lectures on Physics.
+
 </div>
 

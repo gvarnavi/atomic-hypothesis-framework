@@ -58,6 +58,7 @@ const surface_energy_data_polar = d3.range(0, 360, 7.5).map((d, i) => ({
 
 const data = {
   square_lattice: square_lattice,
+  static_nodes: static_nodes,
   surface_energy_data_polar: surface_energy_data_polar
 }
 
