@@ -14,7 +14,7 @@ const data = await FileAttachment("./data/square-lattice_surface-energy.json").j
 const color_scale = d3.scaleSequential(d3.interpolateTurbo).domain([-7, -2]);
 ```
 
-<div class="grid grid-cols-2">
+<div class="grid grid-cols-2" style="grid-auto-rows: auto;">
   <div>
   <h1> Excess Surface Free Energy </h1>
   <p>
@@ -27,6 +27,12 @@ const color_scale = d3.scaleSequential(d3.interpolateTurbo).domain([-7, -2]);
     The atoms inside the 'bulk' of the particle all have 4 nearest neighbors (blue), the atoms on the edges of the particle have 3 nearest neighbors (green),
     while the atoms in the corners of the particle only have two nearest neighbors (orange).
   </p>
+  </div>
+  <div class="grid-rowspan-2">
+    ${resize((width)=>surfaceEnergyStaticPlot(data.static_nodes,color_scale,width))}
+    ${resize((width)=>Plot.legend({label:"Lennard-Jones energy",width:width/2,color:{domain:[-7,-2]}}))}
+  </div>
+  <div>
   <h1> Surface Energy Anisotropy </h1>
   <p>
     We started with a square particle above, and found that its energy is related to the geometry and nearest-neighbor configurations.
@@ -43,10 +49,6 @@ const theta_in_deg_slider = view(Inputs.range([0, 360], {
   value: 60
 }));
 ```
-  </div>
-  <div class="card">
-    ${resize((width)=>surfaceEnergyStaticPlot(data.static_nodes,color_scale,width))}
-    ${resize((width)=>Plot.legend({label:"Lennard-Jones energy",width:width/2,color:{domain:[-7,-2]}}))}
   </div>
   <div class="card">
     <h2>Excess Surface Free Energy</h2>
