@@ -8,6 +8,10 @@ export default {
   // lets you organize them into sections and have unlisted pages.
   pages: [
     {
+      name: "Lennard Jones",
+      path: "lennard-jones"
+    },
+    {
       name: "Surface Energy",
       path: "surface-energy"
     }
